@@ -24,12 +24,7 @@ enyo.kind({
 
   create: function() {
     this.inherited(arguments);
-    this.set('photos', new enyo.Collection([
-      {title: 'Photo 1', thumbnail: 'http://lorempixel.com/300/300/?1'},
-      {title: 'Photo 2', thumbnail: 'http://lorempixel.com/300/300/?2'},
-      {title: 'Photo 3', thumbnail: 'http://lorempixel.com/300/300/?3'},
-      {title: 'Photo 4', thumbnail: 'http://lorempixel.com/300/300/?4'}
-    ]));
+    this.set('photos', new smartView.SearchCollection());
   },
 
   components: [{
@@ -41,6 +36,6 @@ enyo.kind({
     }]
   }],
   search: function(inSender, inEvent) {
-    alert(inEvent.originator.get('value'));
+    this.$.resultList.collection.set('searchText', inEvent.originator.get('value'));
   }
 });
