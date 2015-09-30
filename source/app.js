@@ -5,11 +5,11 @@
 */
 
 enyo.kind({
-  name: 'myapp.Application',
+  name: 'smartView.Application',
   kind: 'enyo.Application',
-  view: 'myapp.MainView'
+  view: 'smartView.MainView'
 });
 
 enyo.ready(function() {
-  new myapp.Application({name: 'app'});
+  new smartView.Application({name: 'app'});
 });
