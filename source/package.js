@@ -9,20 +9,20 @@ enyo.depends(
 	//"$lib/enyo-ilib",
 
 	// Layout library
-	"$lib/layout",
+	'$lib/layout',
 
 	// Moonstone UI library
-	"$lib/moonstone",
+	'$lib/moonstone',
 
 	// Focus support library for TV applications
-	"$lib/spotlight",
+	'$lib/spotlight',
 
 	// CSS/LESS style files
-	"style",
+	'style',
 	// Model and data definitions
-	"data",
+	'data',
 	// View kind definitions
-	"views",
+	'views',
 	// Include our default entry point
-	"app.js"
+	'app.js'
 );

@@ -5,11 +5,11 @@
 */
 
 enyo.kind({
-	name: "myapp.Application",
-	kind: "enyo.Application",
-	view: "myapp.MainView"
+  name: 'myapp.Application',
+  kind: 'enyo.Application',
+  view: 'myapp.MainView'
 });
 
-enyo.ready(function () {
-	new myapp.Application({name: "app"});
+enyo.ready(function() {
+  new myapp.Application({name: 'app'});
 });

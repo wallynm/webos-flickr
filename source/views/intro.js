@@ -1,5 +1,5 @@
 enyo.kind({
-  name: 'myapp.MainView',
+  name: 'myapp.IntroView',
   kind: 'moon.Panels',
   classes: 'moon enyo-fit main-view',
   pattern: 'activity',
