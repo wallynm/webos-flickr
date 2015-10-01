@@ -1,3 +1,3 @@
 enyo.depends(
-	'data.js'
+  'data.js'
 );

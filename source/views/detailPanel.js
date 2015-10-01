@@ -17,6 +17,7 @@ enyo.kind({
   ],
 
   transitionFinished: function(inInfo) {
+    console.warn(inInfo.from < inInfo.to)
     if (inInfo.from < inInfo.to) {
       this.model.fetch();
     }

@@ -1,10 +1,10 @@
 {
-	"id": "com.yourdomain.app",
+	"id": "com.smartview.app",
 	"version": "0.0.1",
-	"vendor": "My Company",
+	"vendor": "SmartView",
 	"type": "web",
 	"main": "index.html",
-	"title": "singlepane",
+	"title": "SmartView",
 	"icon": "icon.png",
 	"largeIcon": "largeIcon.png",
 	"uiRevision":2,

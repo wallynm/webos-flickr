@@ -7,7 +7,7 @@
 enyo.kind({
   name: 'smartView.Application',
   kind: 'enyo.Application',
-  view: 'smartView.SearchPainel'
+  view: 'smartView.MainView'
 });
 
 enyo.ready(function() {

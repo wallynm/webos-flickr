@@ -1,20 +1,4 @@
 enyo.kind({
-  name: 'smartView.SearchPainel',
-  classes: 'moon enyo-fit',
-  components: [{
-    kind: 'moon.Panels', classes: 'enyo-fit', pattern: 'alwaysviewing', popOnBack: true, components: [{
-      kind: 'smartView.SearchPanel'
-    }]
-  }],
-  handlers: {
-    onRequestPushPanel: 'pushPanel'
-  },
-  pushPanel: function(inSender, inEvent) {
-    this.$.panels.pushPanel(inEvent.panel);
-  }
-});
-
-enyo.kind({
   name: 'smartView.SearchPanel',
   kind: 'moon.Panel',
   title: 'Search Flickr',
@@ -60,7 +44,6 @@ enyo.kind({
   },
 
   itemSelected: function(inSender, inEvent) {
-    console.warn(inEvent.model)
     this.doRequestPushPanel({panel: {kind: 'smartView.DetailPanel', model: inEvent.model}});
   },
 
