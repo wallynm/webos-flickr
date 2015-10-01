@@ -1,0 +1,14 @@
+{
+  "preset": "google",
+  "fileExtensions": [ ".js", "jscs" ],
+  "requireCurlyBraces" : [{
+    "if": true
+  }],
+  "maximumLineLength": 500,
+  "validateLineBreaks": "LF",
+
+  "safeContextKeyword": "self",
+  "excludeFiles": [
+      "public/**"
+  ]
+}

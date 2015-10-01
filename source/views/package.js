@@ -1,4 +1,4 @@
 enyo.depends(
-  'views.js',
-	'intro.js'
+  'searchPanel.js',
+	'detailPanel.js'
 );
